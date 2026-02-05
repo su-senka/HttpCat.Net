@@ -1,0 +1,66 @@
+# Build outputs
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
+
+# User settings
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+*.sln.docstates
+
+# Tooling
+*.lock.json
+project.lock.json
+project.fragment.lock.json
+
+# Rider IDE
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# Logs
+*.log
+*.vspscc
+*.vssscc
+
+# NuGet packages
+*.snupkg
+*.nupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# Temporary files
+*.swp
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.bak
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+Desktop.ini
+$RECYCLE.BIN/

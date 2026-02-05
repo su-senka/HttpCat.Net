@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>net10.0;net8.0</TargetFrameworks>
+
+        <!-- Package metadata -->
+        <PackageId>HttpCat.AspNetCore</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>su-senka</Authors>
+        <Description>ASP.NET Core middleware that swaps error responses for embedded HTTP cat images.</Description>
+
+        <!-- SPDX license expression (recommended for NuGet) -->
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+        <!-- Include README.md content on nuget.org package page -->
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+
+        <!-- optional: generate package on build -->
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Assets/**/*.jpg" />
+    </ItemGroup>
+
+    <!-- Ensure README.md and LICENSE.txt are packed into the package root -->
+    <ItemGroup>
+        <None Include="README.md" Pack="true" PackagePath="" />
+        <None Include="LICENSE.txt" Pack="true" PackagePath="" />
+    </ItemGroup>
+</Project>
