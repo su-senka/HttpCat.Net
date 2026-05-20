@@ -1,4 +1,4 @@
-# HttpCat.AspNetCore
+# HttpCat.Net
 
 [![NuGet](https://img.shields.io/nuget/v/HttpCat.AspNetCore.svg)](https://www.nuget.org/packages/HttpCat.AspNetCore)
 [![Build](https://github.com/su-senka/HttpCat.Net/actions/workflows/ci.yml/badge.svg)](https://github.com/su-senka/HttpCat.Net/actions)
