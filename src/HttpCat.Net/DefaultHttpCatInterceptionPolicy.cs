@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 
-namespace HttpCat.AspNetCore;
+namespace HttpCat.Net;
 
 public class DefaultHttpCatInterceptionPolicy : IHttpCatInterceptionPolicy
 {

@@ -1,4 +1,4 @@
-namespace HttpCat.AspNetCore;
+namespace HttpCat.Net;
 
 /// <summary>
 /// Options controlling when and how responses are replaced with images.

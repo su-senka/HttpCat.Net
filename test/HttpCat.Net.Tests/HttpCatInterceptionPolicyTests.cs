@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Xunit;
 
-namespace HttpCat.AspNetCore.Tests;
+namespace HttpCat.Net.Tests;
 
 public class HttpCatInterceptionPolicyTests
 {
@@ -209,12 +209,12 @@ public class HttpCatInterceptionPolicyTests
         var options = new HttpCatOptions
         {
             Enabled = true,
-            OptInHeaderName = "X-HttpCat",
+            OptInHeaderName = "X-HttpCat.Net",
             OnlyForHtmlAcceptHeader = true
         };
         var httpContext = CreateHttpContext();
         httpContext.Response.StatusCode = 404;
-        httpContext.Request.Headers["X-HttpCat"] = "true";
+        httpContext.Request.Headers["X-HttpCat.Net"] = "true";
         // Note: No Accept header, but opt-in should bypass this check
         var responseBody = Array.Empty<byte>();
 

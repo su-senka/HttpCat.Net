@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HttpCat.AspNetCore" Version="1.0.0" />
+    <ProjectReference Include="..\..\src\HttpCat.Net\HttpCat.Net.csproj" />
   </ItemGroup>
 
 </Project>

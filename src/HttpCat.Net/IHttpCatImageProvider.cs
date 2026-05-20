@@ -1,4 +1,4 @@
-namespace HttpCat.AspNetCore;
+namespace HttpCat.Net;
 
 /// <summary>
 /// Provides HTTP cat images for status codes.

@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\HttpCat.AspNetCore\HttpCat.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\src\HttpCat.Net\HttpCat.Net.csproj" />
   </ItemGroup>
 
 </Project>

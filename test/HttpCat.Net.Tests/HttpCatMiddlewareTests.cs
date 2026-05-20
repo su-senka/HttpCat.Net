@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Http;
 using Xunit;
 
-namespace HttpCat.AspNetCore.Tests;
+namespace HttpCat.Net.Tests;
 
 public class EmbeddedResourceHttpCatImageProviderTests
 {
@@ -230,9 +230,9 @@ public class HttpCatMiddlewareIntegrationTests
         // Arrange
         var context = CreateHttpContext();
         context.Request.Headers["Accept"] = "application/json";
-        context.Request.Headers["X-HttpCat"] = "true";
+        context.Request.Headers["X-HttpCat.Net"] = "true";
         
-        var options = new HttpCatOptions { OptInHeaderName = "X-HttpCat" };
+        var options = new HttpCatOptions { OptInHeaderName = "X-HttpCat.Net" };
         var policy = new DefaultHttpCatInterceptionPolicy();
         var provider = new EmbeddedResourceHttpCatImageProvider();
         var middleware = new HttpCatMiddleware(
